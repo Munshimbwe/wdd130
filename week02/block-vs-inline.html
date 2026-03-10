@@ -9,32 +9,66 @@
 </head>
 
 <body>
-    <main>
+    <>
         <h1>Exercise: Block vs. Inline Elements</h1>
-        <p class="note">Some basic styling has been applied in order to illustrate the elements structure and
+        <p class="note">Some basic styling has been applied in order to illustrate the elements
+            structure and
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
-
-        <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <span>In the HTML of this document, change this div element to a span element.</span>
+        <p>Does the document occupy the who space? No, it only covers the space of the bounded by by
+            the tags defining the element. The span elements are inline elements which only take up
+            as much width as their content needs and flow naturally within the text line of thier
+            parent block container</p>
 
         <h2>Task 2: Nesting Inline in Block</h2>
-        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
-        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
+        <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;
+            </span></p>
+        <P>
+            A paragraph with <strong>very important</strong> text
+        </P>
+        <p>
+            This is a statement from the primary children: <em>Jesus</em> lives.
+        </p>
+        <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the
+            paragraph. Observe
             how it flows within the line.</p>
 
         <h2>Task3: Nesting Block in Inline</h2>
         <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
-            <p class="question">What error or layout issue do you see? Why does this happen?</p>
 
 
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+        <span>
+            this is the span
+            <div>
+                this div inside an element
+            </div>
+            the span continues
+        </span>
+
+        <p class="question">What error or layout issue do you see? Why does this happen?</p>
+
+        <p>
+            The span continues on the same
+            line with
+            the other text, while the div breaks and forces a new line.
+            Because the div is a block-level element, it forces a <strong>new line</strong> and
+            takes up the full
+            width, which contradicts the inline nature of the span</p>
+
+        </p>
+
+
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
         &lt;img&gt; element
-        <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
-        <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
-        <button type="button">&lt;button&gt; element</button>
-    </main>
+        <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300"
+          height="300">
+
+        <a href="https://churchofjesuschrist.org">anchor element</a>
+
+        <button type="button">element</button>
+        </main>
 </body>
 
 </html>
