@@ -24,6 +24,13 @@ nav {
     display: block;
 }
 
+nav a {
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
 h1 {
     color: darkblue;
 }
