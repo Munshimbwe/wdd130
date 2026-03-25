@@ -9,8 +9,8 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Time New Roman", "Georgia", "sans serife";
-    --body-font: "Arial", "Helvetica", "sans-serife";
+    --heading-font: "Times New Roman", "Georgia", "sans serif";
+    --body-font: "Arial", "Helvetica", "sans-serif";
 }
 
 header{
@@ -45,7 +45,7 @@ nav, p, section, article {
 nav a {
     padding: 10px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .hero {
