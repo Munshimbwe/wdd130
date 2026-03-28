@@ -13,43 +13,66 @@
     --body-font: "Arial", "Helvetica", "sans-serif";
 }
 
-header{
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #f0f0f0;
 }
 
-header,
-main,
-footer {
-    max-width: 900px;
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    width: 100%;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+    max-width: 1100px;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-}
-
-nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: var(--secondary-color);
+section,
+article {
+    margin: 20px 0;
 }
 
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero-img {
@@ -62,9 +85,12 @@ nav a {
     position: absolute;
     top: 20%;
     left: 50%;
+    width: 100%;
+    text-align: center;
     color: white;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px rgba 0, 0, 0, 0.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
 }
 
 .hero article {
@@ -72,10 +98,11 @@ nav a {
     bottom: 30px;
     right: 30px;
     width: 80%;
-    max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);
     color: #333;
     padding: 20px;
+    border: 1px solid #ccc;
     z-index: 1;
 }
 
@@ -84,23 +111,85 @@ nav a {
     width: 150px;
     height: auto;
     margin-left: 15px;
-    border: 2px solid white;
+    margin-bottom: 5px;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.history-container p {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.history-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.adventure-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.adventure-container figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.adventure-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.adventure-container figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+section h2 {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    color: black;
+    padding: 10px;
 }
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
 }
 
 .socialmedia {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    margin-top: 15px;
 }
 
 .socialmedia img {
-    width: 30px;
+    width: 35px;
     height: auto;
 }
 
