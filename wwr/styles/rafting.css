@@ -125,6 +125,12 @@ fieldset label {
     display: block;
     font-weight: normal;
     margin-bottom: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+fieldset input {
+    margin-right: 10px;
 }
 
 .checkbox-container {
