@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+}
+
+fieldset {
+    border: 2px solid #471010;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1107a8;
+    padding: 0 10px;
+}
+
+input, select, textarea {
+    font-size: 1em;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+.code {
+    background-color: #8d6a6a;
+    font-family: monospace;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    margin: 0 auto;
+    
+}
+
+.number {
+    font-weight: bold;
+    font-size: 2em;
+    color: #6b0353;
+    font-style: italic;
+}

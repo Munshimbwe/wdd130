@@ -14,14 +14,16 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo-link">
+        <div class="logo">
             <img src="images/z-wwr-blue.webp" alt="Rafting Logo">
-        </a>
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -36,17 +38,15 @@
             </address>
         </section>
 
-        <!-- Main Content Grid - FIXED: Added opening div and correct Map Embed -->
         <div class="contact-grid">
             <div id="map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.0423269677835!2d28.462084599999997!3d-14.424723600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196abaf2d9728d63%3A0xe4096f4e7760e30f!2sKabwe%20Mall%20.%20Kabwe%20Shoprite!5e0!3m2!1sen!2sza!4v1775313494137!5m2!1sen!2sza"
-                  width="600" height="450" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.042417331757!2d28.459509674197037!3d-14.42471839072174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196abaf2d9728d63%3A0xe4096f4e7760e30f!2sKabwe%20Mall%20.%20Kabwe%20Shoprite!5e0!3m2!1sen!2sza!4v1775901446630!5m2!1sen!2sza"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <section id="form-section">
+            <section id="form">
                 <h2>Send us a message</h2>
                 <form action="thanks.html" method="post">
                     <div class="form-item">
@@ -93,20 +93,19 @@
             </section>
         </div>
 
-        <!-- Employee Section -->
         <section id="employee-section">
             <h2>We Are Here To Serve You</h2>
             <div class="employee-container">
-                <figure>
-                    <img src="images/rafting64_1024.jpg" alt="Employee Profile">
+                <figure class="profile-card">
+                    <img src="images/rafting64_1024.jpg" alt="Team Leader">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/rafting20_600.jpg" alt="Employee Profile">
+                <figure class="profile-card">
+                    <img src="images/rafting20_600.jpg" alt="Safety Expert">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
-                <figure>
-                    <img src="images/rafting47_600.webp" alt="Employee Profile">
+                <figure class="profile-card">
+                    <img src="images/rafting47_600.webp" alt="Route Expert">
                     <figcaption>Employee Profile</figcaption>
                 </figure>
             </div>
@@ -114,13 +113,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 ⚒️ White Water Rafting ⚒️ Kabwe, Zambia ⚒️</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook">Follow Us On Facebook</a>
-            <a href="https://instagram.com"><img src="images/instagram-square.svg"
-                  alt="Instagram">Follow Us On Instagram</a>
-            <a href="https://x.com"><img src="images/x-bw.svg" alt="X Icon">Follow Us On X</a>
-        </nav>
+        <div class="footer-content">
+            <p>&copy; 2026 White Water Rafting Company | Munshimbwe Kafwanka WDD 130 ⚒️ Kabwe, Zambia ⚒️</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.svg" alt="fb icon">Follow us on Facebook</a>
+                <a href="#"><img src="images/x-bw.svg" alt="twitter icon"> Follow us on X</a>
+                <a href="#"><img src="images/instagram-square.svg" alt="instagram icon"> Follow us on Instagram</a>
+            </div>
+        </div>
     </footer>
 
 </body>
